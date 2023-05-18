@@ -23,11 +23,11 @@ const Slider = () => {
           })}
         </div>
         <i
-          class="fa-solid fa-chevron-left fs-1 left_icon"
+          className="fa-solid fa-chevron-left fs-1 left_icon"
           onClick={() => prevSlide()}
         ></i>
         <i
-          class="fa-solid fa-chevron-right fs-1 right_icon"
+          className="fa-solid fa-chevron-right fs-1 right_icon"
           onClick={() => nextSlide()}
         ></i>
       </div>
