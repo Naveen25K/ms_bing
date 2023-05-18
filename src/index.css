@@ -1,0 +1,166 @@
+/* body bg image */
+
+body {
+  background: url("../assets/bg.jpg") no-repeat top center;
+}
+
+/* bootstrap classes modify */
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  margin-top: 40px;
+}
+.nav-item,
+.nav-item .active {
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+}
+ul.dropdown-menu.humberger_menu.show {
+  position: absolute;
+  left: 72%;
+  width: 300px;
+  font-size: 14px;
+  padding: 15px 10px;
+}
+
+.humberger_menu li a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+.humberger_menu li i {
+  font-size: 15px;
+  color: #767676;
+}
+.customize_radio a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* search bar css */
+
+.search_bar {
+  width: 40%;
+  padding: 15px;
+  border-radius: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+.search_bar input {
+  width: 500px;
+  border: none;
+}
+.search_bar input:focus {
+  outline: none;
+}
+
+/* search bar css end */
+
+/* product slider css */
+.news_slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  margin-top: 450px;
+  margin-bottom: 20px;
+}
+.news_container {
+  position: relative;
+  padding: 0px 40px;
+}
+.news_slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider {
+  border-radius: 10px;
+  color: white;
+  background-color: #292725;
+  min-width: 200px;
+  text-align: center;
+  padding-top: 10px;
+}
+.slider img {
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  height: 80%;
+}
+.left_icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: white;
+}
+.right_icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  cursor: pointer;
+  color: white;
+  transform: translateY(-50%);
+}
+
+/* product slider end */
+
+@media only screen and (max-width: 992px) {
+  .rightside_menu {
+    background-color: white;
+  }
+
+  .navbar-collapse {
+    background-color: white;
+    height: auto;
+    margin-top: 20px;
+    padding: 20px;
+    position: relative;
+  }
+  a.nav-link,
+  a.nav-link.active {
+    font-size: 16px;
+    color: black !important;
+  }
+  ul.dropdown-menu.humberger_menu.show {
+    position: absolute;
+    left: 0;
+    bottom: 1;
+    width: 100%;
+  }
+  .ul.dropdown-menu.humberger_menu.show {
+    position: absolute;
+    left: 72%;
+    width: 300px;
+    font-size: 14px;
+    padding: 15px 10px;
+  }
+  .ul.dropdown-menu.humberger_menu.show {
+    position: absolute;
+    left: 72%;
+    width: 300px;
+    font-size: 14px;
+    padding: 15px 10px;
+  }
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .search_bar {
+    width: 85%;
+    z-index: -1;
+  }
+}
